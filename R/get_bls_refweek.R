@@ -24,7 +24,7 @@ get_bls_refweek <- function(startyear, endyear) {
     return(lubridate::interval(
       start = start_interval,
       end = end_interval,
-      tz = 'UTC'
+      tzone = 'UTC'
     ))
   }
 
@@ -34,7 +34,7 @@ get_bls_refweek <- function(startyear, endyear) {
     ee <- lubridate::ymd(paste0(y, '12', '31'))
     dec_int <- lubridate::interval(start = ss,
                                    end = ee,
-                                   tz = 'UTC')
+                                   tzone = 'UTC')
     return(lubridate::`%within%`(get_week_interval(d), dec_int))
   }
 
