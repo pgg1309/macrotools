@@ -1,3 +1,14 @@
+#' Obtain BLS reference week
+#'
+#' @param startyear A character or integer scalar
+#' @param endyear A character or integer scalar
+#'
+#' @return A vector of intervals representing the BLS reference week
+#' @export
+#'
+#' @examples
+#' get_bls_refweek(2020, 2022)
+#' get_bls_refweek("2020", "2022")
 get_bls_refweek <- function(startyear, endyear) {
 
   get_week_interval <- function(d) {
