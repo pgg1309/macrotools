@@ -11,6 +11,9 @@ RoxygenNote: 7.2.3
 URL: https://github.com/pgg1309/macrotools
 BugReports: https://github.com/pgg1309/macrotools/issues
 Imports: 
+    glue,
+    httr2,
+    jsonlite,
     lubridate,
     purrr
 Suggests: 
