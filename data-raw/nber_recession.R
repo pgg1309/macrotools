@@ -6,7 +6,7 @@
 library(tidyverse)
 raw <- read.csv(here::here("data-raw", "20210719_cycle_dates_pasted.csv"), stringsAsFactors = FALSE, strip.white = TRUE)
 
-nberrecession <- as_tibble(raw) %>%
+nberrecession <- as_tibble(raw)  |>
   mutate(
     peak   = lubridate::as_date(peak),
     trough = lubridate::as_date(trough)
