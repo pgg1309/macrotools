@@ -39,3 +39,6 @@ library(macrotools)
 get_bls_refweek('2022', '2022')
 ```
 
+## Maintenance
+
+I order to add new functions or data, consult the [R Packages book](https://r-pkgs.org/index.html).
