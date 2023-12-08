@@ -13,7 +13,7 @@
 #' #' get_bea_nipa("T10106", "Q", "2022,2023", my_id)}
 get_bea_nipa <- function(TableName = NULL,
                          Frequency = 'Q',
-                         Year = 'ALL',
+                     Year = 'ALL',
                          UserID = NULL) {
   if (is.null(TableName))
     stop("Table Name cannot be NULL")
